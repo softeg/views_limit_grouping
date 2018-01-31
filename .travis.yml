@@ -20,7 +20,7 @@ before_script:
   # - cd tests
   - mkdir -p themes modules profiles
   - composer install --prefer-dist
-  - ./vendor/bin/drush si standard -y --db-url=mysql://travis:@127.0.0.1/drupal
+  # - ./vendor/bin/drush si standard -y --db-url=mysql://travis:@127.0.0.1/drupal
   # Test latest commit on current branch.
   - git clone --branch=$TRAVIS_BRANCH https://github.com/$TRAVIS_REPO_SLUG.git modules/views_limit_grouping
   # - ./vendor/bin/drush en views_limit_grouping -y
