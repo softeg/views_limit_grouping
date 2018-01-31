@@ -1,0 +1,9 @@
+name: Views Grouping Row Limit
+type: module
+description: Limit the number of rows under each grouping field in a view
+core: 8.x
+package: Views
+dependencies:
+  - views
+
+

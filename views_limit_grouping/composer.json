@@ -1,0 +1,14 @@
+{
+  "name": "drupal/views_limit_grouping",
+  "type": "drupal-module",
+  "description": "Limit the number of rows under each grouping field in a view",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/views_limit_grouping",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/views_limit_grouping",
+    "source": "http://cgit.drupalcode.org/views_limit_grouping"
+  },
+  "require": { }
+}
