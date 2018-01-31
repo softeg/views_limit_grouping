@@ -1,0 +1,23 @@
+# Views Grouping Row Limit
+
+## Introduction
+
+This is a basic Views style plugin that allows for a limit on the number of rows displayed within a grouping field. So, for instance, if you have a view that outputs the following:
+
+Grouping Field 1
+ - Row 1
+ - Row 2
+ - Row 3
+ - Row 4
+ - Row 5
+
+Grouping Field 2
+ - Row 1
+ - Row 2
+ - Row 3
+
+there is currently no way using Views to only show the first two rows under each grouping field without painstakingly making several different displays. That's where this module comes in.
+
+## How it works
+
+To use this module, simply change the style plugin for your view to the "Grouping Field (with Limit)" option. You will then be presented with options to choose your limit and offset (the offset just controls what row to start on, e.g. an offset of 1 would omit the first row from each grouping field). Please note that in order for this to take effect, you must set your row limit on the actual view to Unlimited.
