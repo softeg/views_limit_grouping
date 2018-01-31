@@ -18,7 +18,7 @@ before_script:
   - mysql -e 'create database drupal'
   # Install Drupal 8 target site.
   # - cd tests
-  - mkdir -p themes modules profiles
+  - mkdir -p themes modules profiles sites
   - composer install --prefer-dist
   # - ./vendor/bin/drush si standard -y --db-url=mysql://travis:@127.0.0.1/drupal
   # Test latest commit on current branch.
