@@ -23,7 +23,7 @@ before_script:
   - ./vendor/bin/drush si standard -y --db-url=mysql://travis:@127.0.0.1/drupal
   # Test latest commit on current branch.
   - git clone --branch=$TRAVIS_BRANCH https://github.com/$TRAVIS_REPO_SLUG.git modules/views_limit_grouping
-  - ./vendor/bin/drush en views_limit_grouping -y
+  # - ./vendor/bin/drush en views_limit_grouping -y
   # Run Drush web server.
   - ./vendor/bin/drush --debug runserver :8888 > ~/debug.txt 2>&1 &
   - sleep 4s
@@ -31,7 +31,7 @@ before_script:
 
 script:
   - cd $TRAVIS_BUILD_DIR
-  - cd tests
+  # - cd tests
   - ./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer
   - ./vendor/bin/phpcs --config-set show_progress 1
   - ./vendor/bin/phpcs --warning-severity=0 --standard=Drupal,DrupalPractice ../src
